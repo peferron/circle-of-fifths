@@ -1,0 +1,60 @@
+html {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 150%;
+    height: 100%;
+}
+
+body {
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button {
+    background: #388E3C;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    padding: 10px 20px;
+}
+
+input {
+    padding: 10px 20px;
+    border: 0;
+    text-align: center;
+    font-weight: 300;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    display: none;
+}
+
+.fifth {
+    margin: 0;
+}
+
+.progress {
+    width: 200px;
+    height: 40px;
+    background: #EEE;
+    margin: 1rem 0;
+}
+
+.progress__bar {
+    width: 0;
+    background: lightblue;
+    height: 100%;
+}
+
+.progress__bar--progressing {
+    width: 100%;
+    transition-property: width;
+    transition-timing-function: linear;
+}
+
+.random {
+    vertical-align: middle;
+}
