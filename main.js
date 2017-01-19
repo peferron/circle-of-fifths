@@ -1,6 +1,6 @@
 const container = document.body;
 
-const notes = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+const notes = ['A', 'B♭', 'B', 'C', 'C#', 'D', 'E♭', 'E', 'F', 'F#', 'G', 'A♭'];
 const keys = ['Major', 'Minor'];
 const firstFifth = ['C', 'Major'];
 const duration = 7000;
@@ -33,7 +33,7 @@ function nextFifth(prevNote, prevKey, random) {
     const key = keys[keyIndex];
 
     const prevNoteIndex = notes.indexOf(prevNote);
-    const noteIndex = keyIndex == 0 ? (prevNoteIndex + 4) % notes.length : prevNoteIndex;
+    const noteIndex = keyIndex == 0 ? (prevNoteIndex + 7) % notes.length : prevNoteIndex;
     const note = notes[noteIndex];
 
     return [note, key];
